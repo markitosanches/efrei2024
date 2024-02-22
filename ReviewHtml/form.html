@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        input, select, textarea{
+            display: block;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form</h1>
+    <form action="form.html" method="get">
+        <label for="first_name">First Name</label>
+        <input type="text" id="first_name" name="first_name">
+        <label>Address
+            <input type="text" name="address" value="Sherbrooke">
+        </label>
+        <label>City</label>
+        <select name="city">
+            <option value="1">Montreal</option>
+            <option value="2">Quebec</option>
+            <option value="3">Toronto</option>
+        </select>
+        <label> Birthday
+            <input type="date">
+        </label>
+        <label> Price
+            <input type="number" step="0.1">
+        </label>
+        <label> Email
+            <input type="email">
+        </label>
+        <label>Password
+            <input type="password">
+        </label>
+        <label>Comments</label>
+        <textarea name="comments" cols="30" rows="10"></textarea>
+        <fieldset>
+            <legend>Programming</legend>
+            <label><input type="checkbox"> HTML</label>
+            <label><input type="checkbox"> CSS</label>
+            <label><input type="checkbox"> JS</label>
+        </fieldset>
+        <fieldset>
+            <legend>Weather</legend>
+            <label><input type="radio" name="weather"> Warm</label>
+            <label><input type="radio" name="weather"> Cold</label>
+        </fieldset>
+
+        <input type="submit" value="Save">
+    </form>
+</body>
+</html>
