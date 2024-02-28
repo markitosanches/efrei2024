@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Get Element by Id</h3>
+    <h4>Text Array</h4>
+        <div id="text"></div>
+    <h4>Text Obj</h4>
+        <div id="obj"></div>
+</body>
+<script>
+
+
+const person = ['Peter', 'Lisa', 'Paul']
+
+const personObj  = {firstName: "Peter", last_name: "Pan"}
+
+document.getElementById("text").innerHTML = "Hello "+person[1];
+
+document.getElementById("obj").innerHTML = "Hello "+personObj['firstName'];
+
+
+
+</script>
+</html>
