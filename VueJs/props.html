@@ -27,6 +27,7 @@
         <h1>{{ title }}</h1>
         <form @submit.prevent="handleSubmit">
             <custom-input :label="label_username" :type="email" v-model="username"/>
+            <custom-input :label="label_username" :type="email" v-model="username"/>
             <custom-input :label="label_password" :type="password" v-model="password_value"/>
             <button>Login</button>
         </form>
