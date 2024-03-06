@@ -7,7 +7,7 @@
             <div class="px-5 pb-5 text-center">
                 <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white mb-2">{{ product.name }}</h5>
                 <div class="mb-2">
-                  <a href="#" class="hover:text-blue-600 cursor-pointer hover:underline"> See more..</a>
+                  <router-link :to="{ name: 'product', params: {id: product.id} }" class="hover:text-blue-600 cursor-pointer hover:underline"> See more..</router-link>
                 </div>
                 <span class="text-3xl font-bold text-gray-900 dark:text-white">{{ product.price.toFixed(2) }}</span>
                 <div class="flex items-center justify-between mt-2">
