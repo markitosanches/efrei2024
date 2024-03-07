@@ -44,16 +44,22 @@
 <script>
 import SideBar from '@/components/SideBar.vue'
 import MainFooter from '@/components/MainFooter.vue'
-import products from '@/products.json'
+import ProductDataService from '@/services/ProductDataService'
 export default {
   components: {
     SideBar,
     MainFooter
   },
+  mounted () {
+    ProductDataService.getAll()
+      .then(response => {
+        this.inventory = response.data
+      })
+  },
   data () {
     return {
       showSideBar: false,
-      inventory: products,
+      inventory: [],
       cart: {}
     }
   },
